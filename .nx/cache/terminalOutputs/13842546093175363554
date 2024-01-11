@@ -1,0 +1,5 @@
+[2K[1G[1myarn run v1.22.19[22m
+[2K[1G[2m$ strapi ts:generate-types -o ../../shared/types/src/lib -f types.g.ts[22m
+error: unknown option '-f'
+[2K[1G[31merror[39m Command failed with exit code 1.
+[2K[1G[34minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/run[22m for documentation about this command.

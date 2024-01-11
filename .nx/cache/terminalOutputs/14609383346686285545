@@ -1,0 +1,25 @@
+
+> cms@0.0.0 develop
+> strapi develop
+
+Starting the compilation for TypeScript files in /Users/nextap/Documents/nextap/astro-strapi-template/apps/cms
+Building your admin UI with [32mdevelopment[39m configuration...
+[36mℹ[39m Compiling Webpack
+[32m✔[39m Webpack: Compiled successfully in 5.70s
+Admin UI built successfully
+[2024-01-11 23:04:44.724] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2024-01-11 23:04:44.724] [31merror[39m: The upload folder (/Users/nextap/Documents/nextap/astro-strapi-template/apps/cms/public/uploads) doesn't exist or is not accessible. Please make sure it exists.
+Error: The upload folder (/Users/nextap/Documents/nextap/astro-strapi-template/apps/cms/public/uploads) doesn't exist or is not accessible. Please make sure it exists.
+    at Object.init (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/provider-upload-local/lib/index.js:31:13)
+    at createProvider (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/plugin-upload/server/register.js:52:37)
+    at module.exports [as register] (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/plugin-upload/server/register.js:16:38)
+    at Object.register (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/strapi/lib/core/domain/module/index.js:47:46)
+    at Object.register (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/strapi/lib/core/registries/modules.js:33:19)
+    at async Strapi.runLifecyclesFunctions (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/strapi/lib/Strapi.js:537:5)
+    at async Strapi.register (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/strapi/lib/Strapi.js:398:5)
+    at async Strapi.load (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/strapi/lib/Strapi.js:483:5)
+    at async Strapi.start (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/strapi/lib/Strapi.js:215:9)
+npm ERR! Lifecycle script `develop` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: cms@0.0.0 
+npm ERR!   at location: /Users/nextap/Documents/nextap/astro-strapi-template/apps/cms 

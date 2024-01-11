@@ -1,0 +1,13 @@
+{
+  "name": "astro-strapi-template",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "shared/*"
+  ],
+  "devDependencies": {
+    "nx": "17.2.8"
+  }
+}

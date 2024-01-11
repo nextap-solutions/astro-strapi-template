@@ -1,0 +1,24 @@
+
+> astro@0.0.1 build
+> astro check && astro build
+
+[2m22:17:31[22m [34m[check][39m Getting diagnostics for Astro files in /Users/nextap/Documents/nextap/astro-strapi-template/apps/astro...
+[1mResult (3 files): [22m
+[2m-[22m [1m[31m0 errors[39m[22m
+[2m-[22m [1m[33m0 warnings[39m[22m
+[2m-[22m [2m0 hints
+[22m
+[2m22:17:32[22m [34m[build][39m output: [34m"static"[39m
+[2m22:17:32[22m [34m[build][39m directory: [34m/Users/nextap/Documents/nextap/astro-strapi-template/apps/astro/dist/[39m
+[2m22:17:32[22m [34m[build][39m Collecting build info...
+[2m22:17:32[22m [34m[build][39m [32m✓ Completed in 13ms.[39m
+[2m22:17:32[22m [34m[build][39m Building static entrypoints...
+[2m22:17:32[22m [34m[build][39m [32m✓ Completed in 245ms.[39m
+
+[42m[30m generating static routes [39m[49m
+[2m22:17:32[22m [32m▶[39m src/pages/index.astro
+[2m22:17:32[22m   [34m└─[39m [2m/index.html[22m [2m(+2ms)[22m
+[2m22:17:32[22m [32m✓ Completed in 5ms.
+[39m
+[2m22:17:32[22m [34m[build][39m 1 page(s) built in [1m268ms[22m
+[2m22:17:32[22m [34m[build][39m [1mComplete![22m

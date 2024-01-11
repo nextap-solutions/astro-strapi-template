@@ -1,0 +1,13 @@
+[2K[1G[1myarn run v1.22.19[22m
+[2K[1G[2m$ strapi build[22m
+- Building build context
+
+[34m[INFO][39m Including the following ENV variables as part of the JS bundle:
+    - ADMIN_PATH
+    - STRAPI_ADMIN_BACKEND_URL
+    - STRAPI_TELEMETRY_DISABLED
+[32m✔[39m Building build context (44ms)
+- Building admin panel
+
+[32m✔[39m Building admin panel (5216ms)
+[2K[1GDone in 6.28s.

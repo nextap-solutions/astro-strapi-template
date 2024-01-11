@@ -1,0 +1,22 @@
+
+> cms@0.0.0 develop
+> strapi develop
+
+Starting the compilation for TypeScript files in /Users/nextap/Documents/nextap/astro-strapi-template/apps/cms
+[2024-01-11 23:07:13.019] [34mdebug[39m: ⛔️ Server wasn't able to start properly.
+[2024-01-11 23:07:13.020] [31merror[39m: max must be a non-negative number
+TypeError: max must be a non-negative number
+    at new LRUCache (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/lru-cache/index.js:36:13)
+    at memoryStore (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/cache-manager/lib/stores/memory.js:43:20)
+    at Object.create (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/cache-manager/lib/stores/memory.js:235:16)
+    at Object.caching (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/cache-manager/lib/caching.js:32:47)
+    at new MemoryCacheProvider (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/strapi-provider-rest-cache-memory/lib/MemoryCacheProvider.js:10:31)
+    at Object.init (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/strapi-provider-rest-cache-memory/lib/index.js:14:12)
+    at createProvider (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/strapi-plugin-rest-cache/server/bootstrap.js:39:43)
+    at Object.bootstrap (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/strapi-plugin-rest-cache/server/bootstrap.js:84:26)
+    at Object.bootstrap (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/strapi/lib/core/domain/module/index.js:40:47)
+    at Object.bootstrap (/Users/nextap/Documents/nextap/astro-strapi-template/node_modules/@strapi/strapi/lib/core/registries/modules.js:28:19)
+npm ERR! Lifecycle script `develop` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: cms@0.0.0 
+npm ERR!   at location: /Users/nextap/Documents/nextap/astro-strapi-template/apps/cms 
