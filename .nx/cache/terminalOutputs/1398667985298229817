@@ -1,9 +1,0 @@
-[2K[1G[1myarn run v1.22.19[22m
-[2K[1G[2m$ strapi ts:generate-types -o ../../shared/types/src/lib[22m
-[34m[INFO]	[2024-01-11T21:50:22.929Z] (Typegen)[39m Starting the type generation process
-[34m[INFO]	[2024-01-11T21:50:22.930Z] (Typegen)[39m Generating types for [1mcontentTypes[22m
-[34m[INFO]	[2024-01-11T21:50:23.102Z] (Typegen)[39m Generating types for [1mcomponents[22m
-[34m[INFO]	[2024-01-11T21:50:23.107Z] (Typegen)[39m Saved [1mcontentTypes[22m types in [1m../../../../../shared/types/src/lib/generated/contentTypes.d.ts[22m
-[34m[INFO]	[2024-01-11T21:50:23.107Z] (Typegen)[39m Saved [1mcomponents[22m types in [1m../../../../../shared/types/src/lib/generated/components.d.ts[22m
-[34m[INFO]	[2024-01-11T21:50:23.108Z] (Typegen)[39m The task [32mcompleted successfully[39m with [33m0 warning(s)[39m and [31m0 error(s)[39m in 0.179s.
-[2K[1GDone in 1.44s.

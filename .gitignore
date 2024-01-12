@@ -8,6 +8,9 @@ tmp
 # dependencies
 node_modules
 
+# volumes
+volumes
+
 # IDEs and editors
 /.idea
 /.vscode
@@ -41,3 +44,5 @@ Thumbs.db
 
 .env.local
 .nvmrc
+
+.nx/

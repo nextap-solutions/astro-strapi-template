@@ -1,37 +1,37 @@
 {
   "name": "cms",
-  "version": "0.0.0",
   "private": true,
-  "description": "CMS",
-  "license": "MIT",
-  "author": {
-    "name": "Adam Kvasnicka"
-  },
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "build": "strapi build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi",
-    "types": "strapi ts:generate-types -o ../../shared/types/src/lib -f types.g.ts"
+    "build": "strapi build",
+    "types": "strapi ts:generate-types -o ../../shared/types/src/lib",
+    "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
-    "@nx-extend/strapi": "3.5.1",
-    "@strapi/admin": "4.9.1",
-    "@strapi/design-system": "1.6.6",
-    "@strapi/helper-plugin": "4.9.",
-    "@strapi/plugin-i18n": "4.9.1",
-    "@strapi/plugin-users-permissions": "4.9.1",
-    "@strapi/strapi": "4.9.1",
-    "@strapi/typescript-utils": "4.9.1",
+    "@strapi/plugin-cloud": "4.17.0",
+    "@strapi/plugin-i18n": "4.17.0",
+    "@strapi/plugin-users-permissions": "4.17.0",
+    "@strapi/strapi": "4.17.0",
     "pg": "8.8.0",
-    "strapi-plugin-populate-deep": "2.0.0",
-    "strapi-plugin-rest-cache": "4.2.7"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-rest-cache": "^4.2.8",
+    "styled-components": "5.3.3"
   },
-  "engines": {
-    "node": ">=16.x <=18.x.x",
-    "npm": ">=6.0.0"
+  "author": {
+    "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "cf6e5a27-33b2-480d-ad6f-e46f884fec60"
-  }
+    "uuid": "db320f58-645a-48da-9c13-a8a931713bbf"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
