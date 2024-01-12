@@ -1,4 +1,5 @@
 {
+  "npmScope": "astro-strapi-template",
   "targetDefaults": {
     "build": {
       "cache": true

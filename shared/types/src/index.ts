@@ -1,2 +1,2 @@
-export * from './lib/types.g';
-export * from './lib/defaultTypes';
+export * from "./lib/components";
+export * from "./lib/contentTypes";
