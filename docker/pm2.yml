@@ -1,0 +1,13 @@
+apps:
+  - name: "web"
+    script: "/app/node_modules/.bin/nx"
+    args: "serve web --configuration=production"
+    interpreter: "node"
+    env:
+      PORT: 8080
+  - name: "cms"
+    script: "/app/node_modules/.bin/nx"
+    args: "serve cms --configuration=production"
+    interpreter: "node"
+    env:
+      PORT: 8081

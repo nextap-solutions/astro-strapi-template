@@ -5,7 +5,7 @@ services:
     build: './postgresql'
     restart: unless-stopped
     ports:
-      - 127.0.0.1:5432:5432
+      - 5432:5432
     environment:
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapi
@@ -19,4 +19,29 @@ services:
     environment:
       - ADMINER_DESIGN=dracula
     ports:
-      - 127.0.0.1:8888:8080
+      - 8088:8080
+
+  web:
+    build:
+      context: ../
+      dockerfile: ./docker/web/Dockerfile
+    env_file:
+      - ../apps/web/.env
+    restart: unless-stopped
+    ports:
+      - '4321:4321'
+
+  cms:
+    build:
+      context: ../
+      dockerfile: ./docker/cms/Dockerfile
+    env_file:
+      - ../apps/cms/.env
+    restart: unless-stopped
+    environment:
+      DATABASE_HOST: db
+      NODE_ENV: ${NODE_ENV}
+    ports:
+      - '1337:1337'
+    volumes:
+      - ./volumes/cms:/cms/app/public/uploads

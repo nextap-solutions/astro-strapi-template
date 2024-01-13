@@ -1,4 +1,4 @@
-FROM docker.io/library/node:16
+FROM docker.io/library/node:18
 
 RUN yarn global add pm2
 
@@ -9,6 +9,6 @@ COPY . .
 
 RUN yarn && \
     yarn nx build cms --configuration=production && \
-    yarn nx build astro --configuration=production 
+    yarn nx build web --configuration=production
 
 CMD ["pm2-runtime", "docker/pm2.yml"]

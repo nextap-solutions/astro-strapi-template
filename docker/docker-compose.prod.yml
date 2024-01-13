@@ -1,0 +1,7 @@
+# This file extends docker-compose.yml, it won't work standalone
+version: "3.1"
+
+services:
+  cms:
+    build:
+      dockerfile: ./docker/cms/Dockerfile.prod

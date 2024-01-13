@@ -1,37 +1,40 @@
 {
   "name": "cms",
+  "version": "0.0.1",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Strapi application",
+  "license": "MIT",
+  "author": {
+    "name": "Strapi developer"
+  },
   "scripts": {
+    "build": "strapi build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
-    "types": "strapi ts:generate-types -o ../../shared/types/src/lib",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "types": "strapi ts:generate-types -o ../../libs/types/src/lib"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-cloud": "4.17.0",
     "@strapi/plugin-i18n": "4.17.0",
     "@strapi/plugin-users-permissions": "4.17.0",
     "@strapi/strapi": "4.17.0",
+    "@strapi/typescript-utils": "4.17.0",
     "pg": "8.8.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
-    "strapi-plugin-rest-cache": "^4.2.8",
-    "styled-components": "5.3.3"
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-router-dom": "5.2.0",
+    "styled-components": "5.2.1",
+    "strapi-plugin-rest-cache": "4.2.8"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "db320f58-645a-48da-9c13-a8a931713bbf"
+  "devDependencies": {
+    "typescript": "5.3.3"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "db320f58-645a-48da-9c13-a8a931713bb0"
+  }
 }

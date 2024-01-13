@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Web application",
+  "scripts": {
+    "astro": "astro",
+    "build": "astro check && astro build",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "dependencies": {
+    "@cms-template/types": "*",
+    "@astrojs/check": "0.4.1",
+    "astro": "4.1.2",
+    "typescript": "5.3.3"
+  }
+}

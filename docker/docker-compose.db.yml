@@ -1,0 +1,22 @@
+version: '0.0'
+
+services:
+  db:
+    build: './postgresql'
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+      POSTGRES_DB: strapi
+    volumes:
+      - ./volumes/database:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: unless-stopped
+    environment:
+      - ADMINER_DESIGN=dracula
+    ports:
+      - 8088:8080
