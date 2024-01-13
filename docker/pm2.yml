@@ -4,7 +4,7 @@ apps:
     args: "serve web --configuration=production"
     interpreter: "node"
     env:
-      PORT: 8080
+      PORT: 4321
   - name: "cms"
     script: "/app/node_modules/.bin/nx"
     args: "serve cms --configuration=production"
