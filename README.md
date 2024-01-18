@@ -1,4 +1,4 @@
-![astrostrapi](https://github.com/nextap-solutions/astro-strapi-template/assets/49836430/38ac91b6-98c8-435a-81fe-621d37fbe3b9)
+<img src="https://github.com/nextap-solutions/astro-strapi-template/assets/49836430/38ac91b6-98c8-435a-81fe-621d37fbe3b9" alt="astrostrapi header" style="width: 100%;" />
 
 ## Quick Start: Astro + Strapi Template
 
