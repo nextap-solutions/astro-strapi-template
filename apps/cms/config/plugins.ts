@@ -1,4 +1,7 @@
 export default ({ env }) => ({
+  'content-versioning': {
+    enabled: true,
+  },
   upload: {
     config: {
       providerOptions: {
@@ -21,8 +24,5 @@ export default ({ env }) => ({
         contentTypes: [],
       },
     },
-  },
-  'content-versioning': {
-    enabled: true,
   },
 });

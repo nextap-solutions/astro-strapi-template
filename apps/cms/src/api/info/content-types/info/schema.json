@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "showcases",
+  "collectionName": "infos",
   "info": {
-    "singularName": "showcase",
-    "pluralName": "showcases",
-    "displayName": "ShowcaseType",
-    "description": ""
+    "singularName": "info",
+    "pluralName": "infos",
+    "displayName": "Info"
   },
   "options": {
     "draftAndPublish": true
@@ -19,7 +18,7 @@
     }
   },
   "attributes": {
-    "Info": {
+    "showComponent": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -30,7 +29,7 @@
           "localized": true
         }
       },
-      "component": "showcase.info"
+      "component": "showcase.showcase"
     }
   }
 }

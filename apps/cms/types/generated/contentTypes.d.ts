@@ -362,13 +362,12 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiShowcaseShowcase extends Schema.SingleType {
-  collectionName: 'showcases';
+export interface ApiInfoInfo extends Schema.SingleType {
+  collectionName: 'infos';
   info: {
-    singularName: 'showcase';
-    pluralName: 'showcases';
-    displayName: 'ShowcaseType';
-    description: '';
+    singularName: 'info';
+    pluralName: 'infos';
+    displayName: 'Info';
   };
   options: {
     draftAndPublish: true;
@@ -382,7 +381,7 @@ export interface ApiShowcaseShowcase extends Schema.SingleType {
     };
   };
   attributes: {
-    Info: Attribute.Component<'showcase.info'> &
+    showComponent: Attribute.Component<'showcase.showcase'> &
       Attribute.SetPluginOptions<{
         versions: {
           versioned: true;
@@ -394,31 +393,23 @@ export interface ApiShowcaseShowcase extends Schema.SingleType {
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::showcase.showcase',
-      'oneToOne',
-      'admin::user'
-    > &
+    createdBy: Attribute.Relation<'api::info.info', 'oneToOne', 'admin::user'> &
       Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::showcase.showcase',
-      'oneToOne',
-      'admin::user'
-    > &
+    updatedBy: Attribute.Relation<'api::info.info', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     versions: Attribute.Relation<
-      'api::showcase.showcase',
+      'api::info.info',
       'manyToMany',
-      'api::showcase.showcase'
+      'api::info.info'
     >;
     vuid: Attribute.String;
     versionNumber: Attribute.Integer & Attribute.DefaultTo<1>;
     versionComment: Attribute.String;
     isVisibleInListView: Attribute.Boolean & Attribute.DefaultTo<true>;
     localizations: Attribute.Relation<
-      'api::showcase.showcase',
+      'api::info.info',
       'oneToMany',
-      'api::showcase.showcase'
+      'api::info.info'
     >;
     locale: Attribute.String;
   };
@@ -840,7 +831,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::showcase.showcase': ApiShowcaseShowcase;
+      'api::info.info': ApiInfoInfo;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
