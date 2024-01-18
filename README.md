@@ -1,3 +1,5 @@
+![astrostrapi](https://github.com/nextap-solutions/astro-strapi-template/assets/49836430/38ac91b6-98c8-435a-81fe-621d37fbe3b9)
+
 ## Quick Start: Astro + Strapi Template
 
 This template serves as a foundation for developing applications using Astro and Strapi, offering a pre-configured setup for immediate use.
