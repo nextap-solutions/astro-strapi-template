@@ -1,4 +1,5 @@
 <img src="https://github.com/nextap-solutions/astro-strapi-template/assets/49836430/cdd3e7f6-7cc7-4ea6-a873-8a61abe5047a" alt="heade imager" style="width: 100%;" />
+
 ## Quick Start: Astro + Strapi Template
 
 This template serves as a foundation for developing applications using Astro and Strapi, offering a pre-configured setup for immediate use.
