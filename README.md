@@ -2,7 +2,7 @@
 
 ## Quick Start: Astro + Strapi Template
 
-This template serves as a foundation for developing applications using Astro and Strapi, offering a pre-configured setup for immediate use.
+This template serves as a foundation for developing applications using Astro and Strapi, with the inclusion of Nx for monorepo management, offering a pre-configured setup for immediate use.
 
 ## Caution ⚠️
 - **Node Version Requirements**: This template is tested with Node versions 18.17.0 and 20.3.0. Functionality with other versions may vary.
@@ -23,7 +23,7 @@ This template serves as a foundation for developing applications using Astro and
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) `protip: use nvm`
+- [Node.js](https://nodejs.org/en/) `protip: use nvm, volta.js or similar`
   > ⚠️ **Note**: Versions other than 18.17.0 and 20.3.0 may face issues with the sharp package used in one of the strapi dependencies.
 - [Yarn](https://yarnpkg.com/) 
 - [Docker](https://www.docker.com/) 
@@ -35,7 +35,6 @@ This template serves as a foundation for developing applications using Astro and
 ├── apps/    # Workspaces
 ├── docker/     
 ├── libs/  # Shared libraries 
-├── src/  
 ├── nx.json # Nx configuration
 ├── package.json 
 ├── tsconfig.base.json 
@@ -57,22 +56,23 @@ git clone git@github.com:nextap-solutions/astro-strapi-template.git
 yarn install
 ```
 
-3.a Start with docker
+3.a Start in docker
 
 ```bash
 cd docker
 docker compose up
 ```
 
-3.b Start without docker
+3.b Start outside of docker
 
 ```bash
-# in two different terminals
-cd apps/cms && yarn run develop 
-cd apps/astro && yarn run dev
+# in three different terminal windows
+cd docker && docker compose up db
+nx run web:dev
+nx run cms:develop
 ```
 
-At this point you should have the Astro app running on ` http://localhost:4321/` and the Strapi CMS admin panel running on `http://localhost:1337/admin`. Go ahead and create a new strapi user and log in.
+At this point you should have the Astro app running on `http://localhost:4321/` and the Strapi CMS admin panel running on `http://localhost:1337/admin`. Go ahead and create a new strapi user and log in.
 
 ## Support 
 
