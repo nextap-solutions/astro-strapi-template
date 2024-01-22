@@ -58,18 +58,28 @@ yarn install
 
 3.a Start in docker
 
+You can either start the project in development mode or in production mode. The difference is that in development mode the cms and the web app are started in watch mode, while in production mode they are started in production mode.
+
+###### development mode
+
+```bash
+cd docker 
+docker compose up
+```
+
+###### production mode
+
 ```bash
 cd docker
-docker compose up
+docker compose -f docker-compose.yml -f docker-compose.prod.yml up
 ```
 
 3.b Start outside of docker
 
 ```bash
-# in three different terminal windows
+# in two different terminal windows
 cd docker && docker compose up db
-nx run web:dev
-nx run cms:develop
+nx run-many --target=dev --projects=web,cms --parallel
 ```
 
 At this point you should have the Astro app running on `http://localhost:4321/` and the Strapi CMS admin panel running on `http://localhost:1337/admin`. Go ahead and create a new strapi user and log in.
