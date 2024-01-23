@@ -6,7 +6,7 @@ export default {
    *
    * This gives you an opportunity to extend code.
    */
-  register(/*{ strapi }*/) {
+  register() {
     typesWatcher();
   },
 
@@ -17,6 +17,5 @@ export default {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  bootstrap() {
-  },
+  bootstrap(/*{ strapi }*/) { },
 };
