@@ -1,4 +1,5 @@
-import typesWatcher from '../utils/typesWatcher';
+import { exec } from 'child_process';
+
 export default {
   /**
    * An asynchronous register function that runs before
@@ -6,9 +7,7 @@ export default {
    *
    * This gives you an opportunity to extend code.
    */
-  register() {
-    typesWatcher();
-  },
+  register(/*{ strapi }*/) { },
 
   /**
    * An asynchronous bootstrap function that runs before
@@ -17,5 +16,7 @@ export default {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  bootstrap(/*{ strapi }*/) { },
+  bootstrap(/*{ strapi }*/) {
+    exec('strapi ts:generate-types -o ../../libs/cms-types/src/lib')
+  },
 };
