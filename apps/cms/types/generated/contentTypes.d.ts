@@ -362,59 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiInfoInfo extends Schema.SingleType {
-  collectionName: 'infos';
-  info: {
-    singularName: 'info';
-    pluralName: 'infos';
-    displayName: 'Info';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    versions: {
-      versioned: true;
-    };
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    showComponent: Attribute.Component<'showcase.showcase'> &
-      Attribute.SetPluginOptions<{
-        versions: {
-          versioned: true;
-        };
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::info.info', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::info.info', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    versions: Attribute.Relation<
-      'api::info.info',
-      'manyToMany',
-      'api::info.info'
-    >;
-    vuid: Attribute.String;
-    versionNumber: Attribute.Integer & Attribute.DefaultTo<1>;
-    versionComment: Attribute.String;
-    isVisibleInListView: Attribute.Boolean & Attribute.DefaultTo<true>;
-    localizations: Attribute.Relation<
-      'api::info.info',
-      'oneToMany',
-      'api::info.info'
-    >;
-    locale: Attribute.String;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -831,7 +778,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::info.info': ApiInfoInfo;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
