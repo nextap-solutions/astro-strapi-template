@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_showcase_showcases",
+  "info": {
+    "displayName": "showcase"
+  },
+  "options": {},
+  "attributes": {
+    "version": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string"
+    }
+  }
+}

@@ -15,17 +15,18 @@
     "types": "strapi ts:generate-types -o ../../libs/types/src/lib"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "4.17.0",
-    "@strapi/plugin-i18n": "4.17.0",
-    "@strapi/plugin-users-permissions": "4.17.0",
-    "@strapi/strapi": "4.17.0",
-    "@strapi/typescript-utils": "4.17.0",
+    "@notum-cz/strapi-plugin-content-versioning": "1.2.9",
+    "@strapi/plugin-cloud": "4.16.0",
+    "@strapi/plugin-i18n": "4.16.0",
+    "@strapi/plugin-users-permissions": "4.16.0",
+    "@strapi/strapi": "4.16.0",
+    "@strapi/typescript-utils": "4.16.0",
     "pg": "8.8.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-router-dom": "5.2.0",
-    "styled-components": "5.2.1",
-    "strapi-plugin-rest-cache": "4.2.8"
+    "strapi-plugin-rest-cache": "4.2.8",
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
     "typescript": "5.3.3"
