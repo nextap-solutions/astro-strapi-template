@@ -46,5 +46,3 @@ Thumbs.db
 .nvmrc
 
 .nx/
-
-libs/cms-types/src/lib/generated/components.d.ts
