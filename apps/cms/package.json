@@ -11,8 +11,7 @@
     "build": "strapi build",
     "dev": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi",
-    "types": "strapi ts:generate-types -o ../../libs/types/src/lib"
+    "strapi": "strapi"
   },
   "dependencies": {
     "@notum-cz/strapi-plugin-content-versioning": "1.2.9",
