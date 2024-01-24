@@ -17,6 +17,8 @@ export default {
    * run jobs, or perform some special logic.
    */
   bootstrap(/*{ strapi }*/) {
-    exec('strapi ts:generate-types -o ../../libs/cms-types/src/lib')
+    if (process.env.NODE_ENV !== 'production') {
+      exec('strapi ts:generate-types -o ../../libs/cms-types/src/lib')
+    }
   },
 };
