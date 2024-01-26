@@ -6,7 +6,7 @@ This template serves as a foundation for developing applications using Astro and
 
 ## Caution ⚠️
 - **Node Version Requirements**: This template is tested with Node versions 18.17.0 and 20.3.0. Functionality with other versions may vary.
-- **Strapi Version Note**: The template uses Strapi 4.16.0. Subsequent versions might face issues due to breaking changes with the versioning plugin.
+- **Strapi Version Note**: The template uses Strapi 4.16.0. Subsequent versions might face issues due to breaking changes with the versioning plugin. The versioning plugin is also expecting a `DATABASE_CLIENT` environmental variable to be set inside of the cms app regardless of setting postgres as the database connection in cms/config/database.ts.
 
 ## Features Overview
 
