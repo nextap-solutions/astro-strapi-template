@@ -1,2 +1,2 @@
-export * from "./lib/components";
-export * from "./lib/contentTypes";
+export * from "./lib/generated/components";
+export * from "./lib/generated/contentTypes";
