@@ -1,4 +1,4 @@
-<img src="https://github.com/nextap-solutions/astro-strapi-template/assets/49836430/cdd3e7f6-7cc7-4ea6-a873-8a61abe5047a" alt="heade imager" style="width: 100%;" />
+<img src="https://github.com/nextap-solutions/astro-strapi-template/assets/49836430/cdd3e7f6-7cc7-4ea6-a873-8a61abe5047a" alt="header imager" style="width: 100%;" />
 
 ## Quick Start: Astro + Strapi Template
 
@@ -83,6 +83,31 @@ nx run-many --target=dev --projects=web,cms --parallel
 ```
 
 At this point you should have the Astro app running on `http://localhost:4321/` and the Strapi CMS admin panel running on `http://localhost:1337/admin`. Go ahead and create a new strapi user and log in.
+
+## Utils for working with Strapi
+
+Because Strapi returns some data in unconventional format, there are several util functions to help you. You can find them in `/apps/web/src/lib/strapi.ts`
+
+### Examples
+`fetchApi<T>(props: Props): Promise<T>` - fetch Strapi endpoint
+
+```ts
+const homepage = await fetchApi<ApiHomepageHomepage>({
+  endpoint: 'homepage',
+  wrappedByKey: 'data',
+  locale: locale,
+})
+```
+`getStringData(data: Record<string, unknown>): Record<string, string | undefined>` - returns unwrapped Strapi data from `attributtes`
+
+```ts
+const { title, description } = getStringData(homepage);
+```
+`getUploadFileUrl(fileData: unknown): UploadFileData` - returns `url`, `alt` and `mime` from Strapi media type
+
+```ts
+const { url, alt, mime } = getUploadFileUrl(homepage.logo);
+```
 
 ## Support 
 
