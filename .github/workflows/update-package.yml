@@ -1,0 +1,24 @@
+on:
+  release:
+    types: [ published ]
+jobs:
+  publish_npm:
+    name: Updating package version
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      actions:
+        write
+      contents:
+        write
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Bump Version of package.json
+        uses: ramonpaolo/bump-version@v2.3.1
+        with:
+          tag: ${{ github.ref_name }}
+          commit: true
+          branch_to_push: 'master'
+
